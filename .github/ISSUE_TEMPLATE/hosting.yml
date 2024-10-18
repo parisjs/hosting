@@ -18,7 +18,8 @@ body:
         - 19h40: Talks
         - 20h45: Buffet
 
-        - Respectez le [Code de Conduite](https://parisjs.org/code-of-conduct)
+        > [!NOTE]
+        > Les évènements Paris.JS sont soumis à un [Code de Conduite](https://parisjs.org/code-of-conduct)
   - type: input
     id: company
     attributes:
