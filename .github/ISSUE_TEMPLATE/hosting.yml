@@ -42,7 +42,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: other
+    id: address
     attributes:
       label: Adresse
       description: Adresse des locaux où vous souhaitez recevoir le meetup.
