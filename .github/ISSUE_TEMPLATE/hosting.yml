@@ -1,0 +1,79 @@
+name: 🏢 Hosting
+description: Proposer d'héberger le meetup. Les meetups Paris.JS ont lieu le dernier Mercredi de chaque mois.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Guidelines
+
+        Votre entreprise souhaite héberger une édition de Paris.JS?
+
+        Paris.JS réunit le dernier mercredi du mois la communauté JavaScript parisienne.
+
+        ## Déroulé
+
+        - 19h00: Ouverture des portes et accueil des participants
+        - 19h30: Présentation du meetup Paris.JS et rappel des règles
+        - 19h35: Présentation de l'entreprise qui accueille le meetup
+        - 19h40: Talks
+        - 20h45: Buffet
+
+        - Respectez le [Code de Conduite](https://parisjs.org/code-of-conduct)
+  - type: input
+    id: company
+    attributes:
+      label: Nom de votre entreprise
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Type d'hébergement
+      options:
+        - Lieu + Buffet (recommandé)
+        - Lieu uniquement
+        - Buffet uniquement
+    validations:
+      required: true
+  - type: input
+    id: capacity
+    attributes:
+      label: Combien de personnes vos locaux peuvent-ils accueillir?
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: Adresse
+      description: Adresse des locaux où vous souhaitez recevoir le meetup.
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: Autre
+      description: Si vous avez des précisions à ajouter ou des questions, c'est ici
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        # Pour vous contacter
+
+        Les champs suivants sont optionnels peuvent nous aider à vous joindre.
+
+        Dans tous les cas, **pensez bien à activer les notifications sur cette issue**!
+  - type: input
+    id: twitter
+    attributes:
+      label: Twitter
+      description: Votre compte Twitter
+    validations:
+      required: false
+  - type: input
+    id: email
+    attributes:
+      label: Email
+      description: Votre email (attention, il sera public dans le corps de l'issue)
+    validations:
+      required: false
